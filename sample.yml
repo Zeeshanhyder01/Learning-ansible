@@ -8,3 +8,8 @@
     - name : print name
       debug:
         msg : zeeshan
+
+
+# here Name is an optional key but we use for better practices
+# ansible.builtin.debug: is collection , supports from ansible 2.10 version - this is future
+# debug is a module , supports till ansible 2.9 version - this is deprecated soon....
