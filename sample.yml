@@ -1,0 +1,10 @@
+- name : Intro to playbooks
+  hosts : all
+  tasks :
+    - name : print hello
+      ansible.builtin.debug:
+        msg: hello
+
+    - name : print name
+      debug:
+        msg : zeeshan
