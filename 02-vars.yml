@@ -33,12 +33,12 @@
 
 #INVENTORY LEVEL VARS
 
-- name : Intro to Inventory level vars
-  hosts : localhost
-  tasks :
-    - name : print var from inventory file
-      ansible.builtin.debug:
-        msg: URL {{ URL }}
+#- name : Intro to Inventory level vars
+#  hosts : localhost
+#  tasks :
+#    - name : print var from inventory file
+#      ansible.builtin.debug:
+#        msg: URL {{ URL }}
 
 #Command line Vars
 
