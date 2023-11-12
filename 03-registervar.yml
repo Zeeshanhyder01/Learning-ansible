@@ -5,6 +5,6 @@
       ansible.builtin.shell: uptime
       register : output
 
-    - name : Print out put of Linux shell command
+    - name : Print output of Linux shell command
       ansible.builtin.debug:
         msg : "{{ output }}"
