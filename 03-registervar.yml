@@ -1,0 +1,10 @@
+- name : Register variables
+  hosts : localhost
+  tasks :
+    - name : Run Linux-shell Commands
+      ansible.builtin.shell: ls
+      register : output
+
+    - name : Print out put of Linux shell command
+      ansible.builtin.debug:
+        msg : "{{ output }}"
