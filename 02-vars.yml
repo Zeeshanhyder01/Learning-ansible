@@ -43,4 +43,6 @@
 #Command line Vars
 
 #we can provide vars to the play from the command line
-#example : ansible-playbook 02-vars.yml -e URL = ZEESHAN@DEVOPS.COM
+#example : ansible-playbook 02-vars.yml -e URL=ZEESHAN@DEVOPS.COM
+
+#variable precedencies 1-command line 2-Task level 3-Var froma file 4-playlevel 5-Inventory level
