@@ -2,7 +2,7 @@
   hosts : localhost
   tasks :
     - name : Run Linux-shell Commands
-      ansible.builtin.shell: ls
+      ansible.builtin.shell: uptime
       register : output
 
     - name : Print out put of Linux shell command
