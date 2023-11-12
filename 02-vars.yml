@@ -46,3 +46,12 @@
 #example : ansible-playbook 02-vars.yml -e URL=ZEESHAN@DEVOPS.COM
 
 #variable precedencies 1-command line 2-Task level 3-Var froma file 4-playlevel 5-Inventory level
+
+#Predefined Variables in Ansible:
+
+- name : Facts
+  hosts : localhost
+  tasks :
+    - name : Print Host name
+      ansible.builtin.debug:
+        msg : Hostname = {{ ansible_hostname }}
