@@ -29,4 +29,4 @@
       ansible.builtin.debug:
         msg : URL = {{ URL }}
       vars:
-        URL : ZEESHAN@DEVOPS.COMk
+        URL : ZEESHAN@DEVOPS.COM
