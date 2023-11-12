@@ -9,3 +9,13 @@
       ansible.builtin.debug:
         msg : URL = {{ URL }}
 
+#Variable from a file
+
+- name : variable from another file and access it in our play
+  hosts : localhost
+  vars_file :
+    - demo.url
+  tasks :
+    - name : print url from demo.url file
+      ansible.builtin.debug:
+        msg : URL={{ URL }}
