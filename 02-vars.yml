@@ -39,3 +39,8 @@
     - name : print var from inventory file
       ansible.builtin.debug:
         msg: URL {{ URL }}
+
+#Command line Vars
+
+#we can provide vars to the play from the command line
+#example : ansible-playbook 02-vars.yml -e URL = ZEESHAN@DEVOPS.COM
