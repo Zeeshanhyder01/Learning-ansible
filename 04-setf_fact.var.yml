@@ -1,0 +1,13 @@
+- name : set_fact Variables
+  hosts : localhost
+  tasks :
+    - name : Linux shell commands using set_fact
+      ansible.builtin.shell: uptime
+      register : output
+
+    - name : storing a variable in standard name
+      ansible.builtin.set_fact:
+        UPTIME : "{{ output }}"
+    - name : print output of shell commands
+      ansible.builtin.debug:
+        msg : "{{ UPTIME }}"
