@@ -55,3 +55,5 @@
     - name : Print Host name
       ansible.builtin.debug:
         msg : Hostname = {{ ansible_hostname }}
+
+#for more pre_def Variables please visit ansible documentation
