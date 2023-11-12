@@ -1,0 +1,11 @@
+#playlevel variables
+
+- name : Intro to playlevel Var
+  hosts: localhost
+  vars :
+    URL : ZEESHAN@DEVOPS.COM
+  tasks :
+    - name : print URL
+      ansible.builtin.debug:
+        msg : URL = {{ URL }}
+
