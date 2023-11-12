@@ -19,3 +19,14 @@
     - name : print url from demo.url file
       ansible.builtin.debug:
         msg : URL= {{ URL }}
+
+#Tasl Level Variables
+
+- name : Task Level Vars
+  hosts : localhost
+  tasks :
+    - name : print URL AT TASK LEVEL
+      ansible.builtin.debug:
+        msg : URL = {{ URL }}
+      vars:
+        URL : ZEESHAN@DEVOPS.COMk
