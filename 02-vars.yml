@@ -13,7 +13,7 @@
 
 - name : variable from another file and access it in our play
   hosts : localhost
-  vars_file :
+  vars_files:
     - demo.url
   tasks :
     - name : print url from demo.url file
