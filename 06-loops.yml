@@ -1,8 +1,10 @@
-- name : Loops Demo
+- name: Demo on loops
   hosts: localhost
-  ansible.builtin.debug:
-    msg : Fruit Name {{ item }}
-  loop :
-    - banana
-    - apple
-    - mango
+  tasks:
+    - name: Loop Example
+      debug:
+        msg: Fruit =  {{item}}
+      loop:
+        - apple
+        - banana
+        - mango
